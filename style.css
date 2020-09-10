@@ -1,0 +1,93 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+#calender{
+    position: relative;
+    
+}
+#calender::before{
+    content: "";
+    background: url(Working-Out-With-Chalk.jpg);
+    height: 500%;
+    width: 100%;
+    position: absolute;
+    opacity: 0.9;
+    z-index: -3;
+
+}
+.display{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    /* justify-content: center;
+    justify-self: center; */
+}
+.content{
+    position: relative;
+    top: 75px;
+    left: 89px;
+    color: whitesmoke;
+}
+#month{
+    position: relative;
+    /* width: 48px; */
+    top: 271px;
+    /* justify-content: space-around;
+    justify-items: center; */
+    /* left: 61px; */
+}
+
+.mt{
+    display: grid;
+    grid-template-columns: repeat(7,42px);
+    font-size: 20px;
+    font-weight: bold;
+    justify-content: space-evenly;
+    justify-items: center;
+
+
+}
+#date{
+    
+    position: relative;
+    top: 306px;
+
+}
+
+.lt{
+
+}
+
+.list-date{
+    display: grid;
+    grid-template-columns: repeat(3,175px);
+    list-style: none;
+    justify-content: end;
+}
+.mk{
+    font-size: 20px;
+    width: 32px;
+    transition: all 1s;
+}
+    
+.mk:hover{
+    /* font-size: 30px; */
+    background-color: aqua;
+    /* text-shadow:12px 10px 12px 10px green; */
+    font-size: 30px;
+    text-decoration: underline;
+    color: hotpink;
+}
+
+#date1{
+    position: relative;
+    top: 320px;
+}
+.list-date1{
+    display: grid;
+    grid-template-columns: repeat(7,auto);
+    list-style: none;
+    justify-content: space-evenly;
+}
